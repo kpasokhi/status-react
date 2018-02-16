@@ -44,7 +44,7 @@
    :icon-style {:width  17
                 :height 17}
    ;; TODO(jeluard) Refactor this or Jan will have an heart attack
-   :handler    #(do (re-frame/dispatch [:remove-chat chat-id])
+   :handler    #(do (re-frame/dispatch [:remove-chat! chat-id])
                     (re-frame/dispatch [:navigation-replace :home]))})
 
 (def item-notifications
