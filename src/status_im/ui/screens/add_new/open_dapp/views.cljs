@@ -30,6 +30,7 @@
                                                (re-frame/dispatch [:navigate-to-clean :home])
                                                (re-frame/dispatch [:open-browser {:url @url-text}]))
                          :placeholder       (i18n/label :t/enter-url)
+                         :auto-capitalize   :none
                          :style             styles/url-input}]]
      [react/text {:style styles/list-title}
       (i18n/label :t/selected-dapps)]

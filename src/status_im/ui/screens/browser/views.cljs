@@ -33,6 +33,7 @@
                         :on-submit-editing #(re-frame/dispatch [:update-browser (assoc browser :url @url-text)])
                         :auto-focus        (not url)
                         :placeholder       (i18n/label :t/enter-url)
+                        :auto-capitalize   :none
                         :default-value     url
                         :style             styles/url-input}]
      ;;TODO .reload doesn't work, implement later
